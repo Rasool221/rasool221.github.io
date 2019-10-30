@@ -1,39 +1,31 @@
+<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <canvas id="animCanvas" width="200" height = "200" onmousemove="grabCoords(event)"></canvas>
-</head>
-<body>
-</body>
-<script>
- 
-  var mouseX = 0;
-  var mouseY = 0;
-
-  function grabCoords(event) {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
-  }
-
-  // main canvas drawing loop
-  setInterval(function() {
-    var size = {
-      width: window.innerWidth || document.body.clientWidth,
-      height: window.innerHeight || document.body.clientHeight
-    }
-
-    var canvas = document.getElementById("animCanvas");
-    var ctx = canvas.getContext("2d");
-
-    canvas.setAttribute("width", size.width);
-    canvas.setAttribute("height", size.height);
-
-    
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(mouseX,mouseY, 150, 75);
-
-  }, 1);
-
-
-</script>
+    <head>
+    </head>
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <body class="container-fluid">
+        <h1>Early life</h1>
+        <p>I was born a <b>small</b> child.</p>
+        <hr/>
+        <h1>Highschool Accomplishments</h2>
+        <p>Mistakes were made</p>
+        <hr/>
+        <h1>University Accomplishments</h3>
+        <p>yes?</p>
+        <hr/>
+		<h1>Music life</h1>
+		<div style="text-align: center;">
+			<p>Travis Scott.</p>
+			<img src="BITTSM.jpg" width=200px height=200px></img>
+			<img src="GLOBE.gif" width=200px height=200px></img>
+			<img src="image002-12-1570050679-640x640.jpg" width=200px height=200px></img>
+			<img src="Astroworld.jpg" width=200px height=200px></img>
+			<img src="DaysBeforeRodeo.jpg" width=200px height=200px></img>
+			<img src="Rodeo.jpg" width=200px height=200px></img>
+		</div>
+		<div style="text-align: center;">
+			<iframe src="https://travisscott.com/" width=500px height=500px"></iframe>
+		</div>
+    </body>
 </html>
