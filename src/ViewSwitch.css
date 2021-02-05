@@ -1,0 +1,43 @@
+.switchLabel {
+    font-weight: 700;
+    margin: 1em;
+}
+
+.containerDiv {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.modelRender {
+    height: 80%;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+model-viewer {
+    width: 100%;
+    height: 500px;
+    --poster-color: #ffffff00;
+}
+
+.container {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    height: 800px;
+}
+
+.tooltip {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 1000;
+    justify-content: center;
+    text-align: center;
+}
